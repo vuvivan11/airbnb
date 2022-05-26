@@ -1,12 +1,16 @@
 .header{
     // padding: 20px 40px;
     display: flex;
+    justify-content: space-between;
 }
 .header__logo{
     // color: red;
 }
 .header__navbar{
-
+    width: 350px;
+    height: 48px;
+    border-radius: 50px;
+    border: solid 0.5px #908785;
 }
 .header__user{
 

@@ -9,7 +9,11 @@ export default function Header() {
                     logo
                 </div>
                 <div className='header__navbar'>
-                    navbar
+                    <button>Anywhere</button>
+                    <button>Anyweek</button>
+                    <button>
+                        <span>Add guest</span>
+                    </button>
                 </div>
                 <div className='header__user'>
                     user
