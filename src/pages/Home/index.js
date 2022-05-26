@@ -5,7 +5,7 @@ import Header from '../../layouts/Home/Header'
 
 export default function Home({ exact, path, component }) {
   return (
-    <div style={{width: "90%", margin: "auto"}}>
+    <div>
       <Header />
       <Route exact={exact} path={path} component={component}></Route>
       <Footer />
