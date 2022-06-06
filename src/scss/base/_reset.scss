@@ -1,18 +1,53 @@
-*,
-::after,
-::before {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html,body {
-    font-family: 'Roboto', sans-serif;
-    background-color: white; //$color-white;
-    // @include styleText($color-dark-1,$fs-1,$fw-1);
-    color: black;
-    font-size:15px ;
-    font-weight:300 ;
-    text-decoration: none;
-    scroll-behavior: smooth;
-} 
+:root {
+  --gray-color: #f5f5f5;
+  --dark-color: #555555;
+  --tomato-color: tomato;
+}
+/* Loader Page */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  /* màn hình 1200px hoặc lớn hơn */
+  /* màn hình có kích thước nhỏ hơn 1200px thì max-width hiển thị 100% kích thước màn hình đó*/
+  width: 1260px;
+  max-width: 100%;
+  /* căn giữa khối khi nằm trong khối khác*/
+  margin: 0 auto;
+}
+
+.grid__full-width {
+  /* không muốn sử dụng màn hình 1200px */
+  width: 100%;
+}
+
+.loader-icon {
+  font-size: 70px;
+  color: #16a596;
+  animation: loader 1s ease-in-out infinite;
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
